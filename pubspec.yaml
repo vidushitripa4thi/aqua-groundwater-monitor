@@ -1,0 +1,80 @@
+name: aqua_groundwater_monitor
+description: Flutter app for real-time groundwater monitoring using DWLR station data
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Icons
+  cupertino_icons: ^1.0.6
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+  firebase_messaging: ^14.7.10
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Charts & Visualization
+  fl_chart: ^0.66.0
+  syncfusion_flutter_charts: ^25.1.35
+  
+  # Maps
+  google_maps_flutter: ^2.5.3
+  geolocator: ^11.0.0
+  geocoding: ^2.1.1
+  
+  # Network & API
+  http: ^1.2.0
+  dio: ^5.4.0
+  
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  
+  # Utilities
+  intl: ^0.19.0
+  path_provider: ^2.1.2
+  permission_handler: ^11.2.0
+  
+  # PDF Export
+  pdf: ^3.10.8
+  printing: ^5.12.0
+  
+  # CSV Export
+  csv: ^6.0.0
+  
+  # UI Enhancements
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/lottie/
+    - assets/icons/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
